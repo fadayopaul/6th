@@ -1,0 +1,19 @@
+.container {
+    font-family:"Barlow Condensed, Arial, sans-serif";
+}
+
+
+h1.hero {
+	font-family: "Barlow Condensed", Arial, sans-serif;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%);
+	font-size: 50rem;
+	text-transform: uppercase;
+	z-index: 1;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: .1rem;
+	-webkit-text-stroke-color: rgb(63, 71, 68);
+}
