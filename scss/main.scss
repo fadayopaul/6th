@@ -2,10 +2,15 @@
 @import "abstracts/base";
 @import "abstracts/typography";
 @import "abstracts/animations";
+@import "abstracts/util";
 
 
 @import "base/base";
+@import "base/navbar";
 
-@import "components/home";
+@import "components/header";
+@import "components/footer";
+@import "components/introduction";
+@import "components/features";
 
 

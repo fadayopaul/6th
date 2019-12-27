@@ -1,0 +1,38 @@
+.footer {
+    @include flexCenter;
+    flex-direction:column;
+    color:$black;
+    height:20vh;
+    border-top:0.3px solid $blackop;
+
+    &__icon {
+         @include flexCenter;
+
+         &-link {
+          &:link,
+          &:visited {
+              font-size:2rem;
+              padding-right:1.5rem;
+              transition:all .3s;
+              cursor:pointer;
+              color:$grey;
+          }
+
+          &:hover,
+          &:active {
+          }  
+         }
+
+         &-item {
+          cursor:pointer;
+         }
+    }
+
+    &__copyright {
+         @include flexCenter;
+         font-size:1.5rem;
+         font-weight:700;
+         color:$grey;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+}
