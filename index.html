@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="fonts/font-awesome.css" rel="stylesheet">
+  <link href="css/fonts/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Nwadike Mayowa </title>
 </head>
@@ -23,18 +23,24 @@
     
     <nav>    
         <div class="nav-links">
-            <a href="#" class="link">Home</a>
-            <a href="#" class="link">Portfolio</a>
-            <a href="#" class="link">Store</a>
-            <a href="#" class="link">Artist</a>
-            <a href="#" class="link">Articles</a>
-            <a href="#" class="link">Contact</a>
+          <a href="index.html" class="link">Home</a>
+          <a href="portfolio.html" class="link">Portfolio</a>
+          <a href="store.html" class="link">Store</a>
+          <a href="artist.html" class="link">Artist</a>
+          <a href="articles.html" class="link">Articles</a>
+          <a href="contact.html" class="link">Contact</a>
         </div>
     </nav>
 
      
   <main class="container">
-      
+    
+    <!-- Page Preloder -->
+    <section id="preloder">
+      <div class="loader"></div>
+    </section>
+
+
       <header class="header">
         <h1 class="header__intro">6th</h1>
       </header>
@@ -48,7 +54,7 @@
           <div class="features__box">
               <i class="fa fa-paint-brush"></i>
               <h1>Artworks</h1>
-              <a class="features__box-link mt-small" href="#"> 
+              <a class="features__box-link mt-small" href="portfolio.html"> 
                   View
               </a>
           </div>
@@ -56,7 +62,7 @@
           <div class="features__box">
             <i class="fa fa-edit"></i>
             <h1>Articles</h1>
-            <a class="features__box-link mt-small" href="#"> 
+            <a class="features__box-link mt-small" href="articles.html"> 
                 Read
             </a>
         </div>
@@ -64,7 +70,7 @@
         <div class="features__box">
           <i class="fa fa-file-text-o"></i>
           <h1>Store</h1>
-          <a class="features__box-link mt-small" href="#"> 
+          <a class="features__box-link mt-small" href="store.html"> 
               Shop
           </a>
        </div>
@@ -90,8 +96,8 @@
                      </div>
             </footer>
   </main>     
-      
+  
+  <script src="js/jquery-3.4.1.min.js"></script> 
   <script type="text/javascript" src="js/main.js"></script>
-   <script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>

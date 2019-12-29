@@ -14,14 +14,16 @@ nav {
     z-index: 10000;
     transform: scale(0);
     transform-origin: center;
+    opacity:0;
 }
 
 nav.nav-open {
     transform: translateX(0);
-    background: #ffffff; 
+    background: $black;
     border-radius: 0% 0% 0% 0%;
     z-index: 10000;
     transform: scale(1);
+    opacity:1;
 }
 
 .navigation {
@@ -31,7 +33,7 @@ nav.nav-open {
   height:10rem;
   width:100%;
   z-index: 20000;
-  padding:3rem;
+  padding:5rem;
 
   display:flex;
   justify-content:space-between;
@@ -59,7 +61,7 @@ nav.nav-open {
 .menu-btn .line {
     padding: 0;
     width: 3rem;
-    background: #fff;
+    background:$grey;
     height: 2px;
     margin: 5px 0;
     transition: all 700ms cubic-bezier(.9, 0, .33, 1);
@@ -73,7 +75,7 @@ nav.nav-open {
  .menu-btn .line.line--1.line-cross {
     width: 3rem;
     transform: rotate(45deg) translateY(10px);
-    background: rgba(0,0,0,0.6);
+    background: $white;
 }
 
  .menu-btn .line.line--2 {
@@ -95,7 +97,7 @@ nav.nav-open {
  .menu-btn .line.line--3.line-cross {
     width: 3rem;
     transform: rotate(-45deg) translateY(-10px);
-     background: rgba(0,0,0,0.6);
+     background: $white; 
 }
 
 .nav-links {
@@ -122,7 +124,7 @@ nav.nav-open {
     margin: 1rem 0;
     text-decoration: none;
     font-family: sans-serif;
-    color: rgba(0,0,0,0.9);
+    color:$white;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2rem;

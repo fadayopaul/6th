@@ -1,0 +1,261 @@
+.artist {
+    padding-top:15rem;
+    display:flex;
+
+    &__image {
+        flex-basis:50%;
+        flex-grow:0;
+        flex-shrink:0;
+
+        display:flex;
+        justify-content: center;
+        align-items:center;
+
+        img {
+            height:90%;
+            width: 70%;
+            object-fit:cover;
+        }
+    }
+
+    &__info {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        padding:5rem;
+        
+
+        h2 {
+            width:100%;
+            font-size:5rem;
+            line-height:6rem;
+            font-family: "Karla", Arial, sans-serif;
+            color:$grey;
+        }
+    }
+
+    &__details {
+        display:flex;
+        font-size:1.5rem;
+        margin-top:3rem;
+
+        h6 {
+            writing-mode:vertical-rl;
+            font-size:2rem;
+            font-weight:400;
+            font-family: "Karla", Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            position:relative;
+            margin-right:3rem;
+
+            &::after {
+                position: absolute;
+                bottom: 0.7rem;
+                right: 0;
+                transform: rotate(90deg);
+                content: '';
+                background:$black;
+                width: 4rem;
+                height: 1px;
+            }
+        }
+
+        &-info {
+            color:$grey;
+            font-size:1.6rem;
+            font-family: "Karla", Arial, sans-serif;
+
+            p {
+                margin-bottom:3rem;
+            }
+
+            &-link {
+                &:link,
+                &:visited {
+                    color:$grey;
+                    border:1px solid $grey;
+                    padding:1rem 2rem;
+                    font-size:1.5rem;
+                    transition:all .2s;
+                    font-weight:400; 
+                    text-transform:uppercase; 
+                    letter-spacing: .5rem;
+                }
+    
+                &:hover,
+                &:active {
+                    background-color:$grey;
+                    color:$white;
+                }
+            }
+        }
+    }
+}
+
+
+.owl-theme .owl-nav [class*='owl-'] {
+    transition: all 0.3s ease;
+}
+
+
+  .owl-theme {
+      position:relative;
+      z-index:3000;
+      height:30vh;
+
+      .owl-dots {
+          position:absolute;
+          bottom:3px;
+          left:50%;
+          transform:translate(-50%,-50%);
+
+          .owl-dot {
+            cursor:pointer;
+            span {
+                cursor:pointer;
+                background-color:$black;
+                &:hover {
+                    background-color:$dark_grey;
+                }
+             }
+
+             &.active  {
+                 span {
+                    background-color: $black
+                 }
+               
+             }
+          }            
+      }
+  }
+
+
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 2.5rem; 
+    height: .3rem;
+    margin: .5rem .7rem;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius:0;
+  }
+
+
+.testimonials {
+    @include flexCenter;
+    flex-direction: column;
+    margin-top:5rem;
+
+    // h2 {
+    //     color:$dark_grey;
+    //     font-size:2rem;
+    // }
+
+    h4 {
+        color:$grey;
+        font-size:2.5rem;
+        font-family: "Montserrat";
+    }
+
+    &__content {
+
+        &__item {
+            @include flexCenter;
+            flex-direction: column;
+
+            p {
+                   
+                    font-family: "Montserrat";
+                    color: #000;
+                    font-size:2rem;
+                    width:70%;
+                    //margin:0 15%;
+                    text-align:center;
+            }
+
+           h5 {
+                font-family: "Playfair Display", Georgia, serif;
+                font-family: "Montserrat";
+                color: #000;
+                font-size:3rem;
+            }
+        }
+       
+    }
+}
+
+.newsletter {
+    @include flexCenter;
+    flex-direction: column;
+    margin-top:5rem;
+    margin-bottom:5rem;
+
+    h2 {
+        color:$grey;
+        font-size:2.5rem;
+        font-family: "Montserrat";
+    }
+
+    p {
+        width:70%;
+        text-align:center;
+        font-family: "Montserrat";
+        color: #000;
+        font-size: 1.5rem;
+        width:70%;
+        text-align:center;
+    }
+
+    &__form {
+        @include flexCenter;
+        width:100%;
+        flex-direction: column;
+
+        &-email {
+            font-size:1.5rem;
+            padding:1rem 0rem;
+            border-radius:1px;
+            background-color: transparent;
+            border:none;
+            font-family:inherit;
+            border-bottom:1px solid $grey;  
+            color:$grey;
+            width:50%;
+           
+            &::-webkit-input-placeholder {
+               text-align:center;
+            }
+
+            &:focus {
+                outline:none;
+                padding:1rem;
+                color:$grey;
+                background-color: transparent;
+            }
+
+        }
+
+        &-submit {
+            color:$grey;
+            background-color:$white;
+            border:1px solid $grey;
+            padding:1rem 2rem;
+            font-size:1.5rem;
+            transition:all .2s;
+            font-weight:400; 
+            text-transform:uppercase; 
+            letter-spacing: .5rem;
+            margin-top:1rem;
+
+            &:hover,
+            &:active {
+                background-color:$grey;
+                color:$white;
+            }
+        }
+
+    }
+}

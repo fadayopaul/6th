@@ -2,6 +2,17 @@
     font-family:"Barlow Condensed, Arial, sans-serif";
 }
 
+h2.bg__head {
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    color:$grey;
+    color:rgba(151, 151, 151, 0.306);
+    font-size: 20rem;
+    z-index:-1;
+}
+
 
 h1.hero {
     font-family: "Barlow Condensed", Arial, sans-serif;

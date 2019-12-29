@@ -1,0 +1,55 @@
+.articles {
+    padding-top:20rem;
+    padding-bottom:5rem;
+    padding-left:5rem;
+    padding-right:5rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    min-height:80vh;
+
+     &__item {
+        flex-basis:45%;
+        @include flexCenter;
+        flex-direction:column;
+        align-items:flex-start;
+        margin-bottom:2rem; 
+
+        h4 {
+            color:$black;
+            font-size:2.5rem;
+            font-family: "Montserrat";
+            border-bottom:2px solid $black;
+            margin-bottom:1rem;
+        }
+
+        p {
+            color:$grey;
+            font-size:1.5rem;
+            font-family: "Montserrat";
+        }
+
+        &-link {
+            &:link,
+            &:visited {
+                color:$black;
+                background-color:$white;
+                border:1px solid $black;
+                padding:1rem 2rem;
+                font-size:1.5rem;
+                transition:all .2s;
+                font-weight:400; 
+                text-transform:uppercase; 
+                letter-spacing: .2rem;
+                margin-top:.5rem;
+            }
+
+            &:hover,
+            &:active {
+                background-color:$grey;
+                border:1px solid $grey;
+                color:$white;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@
             &:link,
             &:visited {
                 font-size:2rem;
-                transition:all .3s;
+               transition:all .3s;
                 cursor:pointer;
                 border:2px solid $blackop;
                 border-radius:10px;
@@ -33,13 +33,28 @@
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 transition:all .3s;
                 color:$blackop;
-                text-transform: uppercase;
+               text-transform: uppercase;
                 width:50%;
+
+                // color:$black;
+                // background-color:$white;
+                // border:1px solid $black;
+                // padding:1rem 2rem;
+                // font-size:1.5rem;
+                // transition:all .2s;
+                // font-weight:400; 
+                // text-transform:uppercase; 
+                // letter-spacing: .2rem;
+                // margin-top:.5rem;
             }
   
             &:hover,
             &:active {
                 background-color:$white;
+
+                // background-color:$grey;
+                // border:1px solid $grey;
+                // color:$white;
             }  
         }
 
@@ -59,9 +74,6 @@
       
                 &:hover,
                 &:active {
-                    // background-color:$black;
-                    // color:$white;
-
                     color:$black;
                     background-color:$white;
                 }  
