@@ -11,6 +11,20 @@ h2.bg__head {
     color:rgba(151, 151, 151, 0.306);
     font-size: 20rem;
     z-index:-1;
+
+    @include respond(misc1) {
+        font-size: 15rem;
+    }
+
+    @include respond(phone) {
+        top:5rem;
+        font-size: 10rem;
+    }
+
+    @include respond(misc2) {
+        top:7rem;
+        font-size: 7rem;
+    }
 }
 
 

@@ -2,8 +2,16 @@
     @include flexCenter;
     flex-direction:column;
     color:$black;
-    height:20vh;
-    border-top:0.3px solid $blackop;
+    height:15vh;
+    border-top:0.01px solid $grey;
+
+    @include respond(misc1) {
+       height:10vh;
+    }
+
+    @include respond(phone) {
+        height:8vh;
+    }
 
     &__icon {
          @include flexCenter;

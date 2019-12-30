@@ -2,6 +2,10 @@
     padding-top:15rem;
     display:flex;
 
+    @include respond(misc3) {
+        flex-wrap:wrap; 
+    }
+
     &__image {
         flex-basis:50%;
         flex-grow:0;
@@ -11,10 +15,19 @@
         justify-content: center;
         align-items:center;
 
+        @include respond(misc3) {
+           flex-basis:100%;
+        }
+
+
         img {
             height:90%;
             width: 70%;
             object-fit:cover;
+
+            @include respond(misc3) {
+               // width:100%;
+            }
         }
     }
 

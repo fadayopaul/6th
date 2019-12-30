@@ -25,12 +25,6 @@ html {
     box-sizing:border-box;
     font-size:62.5%; //1rem =10px,10px/16px * 100 = 62.45:
 
-    // BreakPoints
-    // xm-phone  270
-    // -phone     600
-    // -tab-port  900
-    // -tab-land  1200
-    // -big-desktop >1800
     
     @include respond(big-desktop) {
         font-size:75%;//1rem = 12px/16 = 75%

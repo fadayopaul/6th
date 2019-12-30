@@ -7,6 +7,15 @@
     background-repeat: no-repeat;
     position:relative;
     @include flexCenter;
+    align-items:flex-end;
+
+    @include respond(misc1) {
+        height:90vh;
+    }
+
+    @include respond(phone) {
+      align-items:flex-end;
+    }
 
     h1.header__intro {
         font-family: "Barlow Condensed", Arial, sans-serif;
@@ -17,6 +26,16 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: .1rem;
         -webkit-text-stroke-color:$grey;
+        opacity:0;
+
+        @include respond(misc1) {
+            font-size: 35rem;
+        }
+
+        @include respond(phone) {
+            font-size: 20rem;
+            opacity:1;
+          }
     }
 }
 

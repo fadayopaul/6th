@@ -7,11 +7,19 @@
     flex-wrap:wrap;
     justify-content:space-between;
 
+   
+
     &__item {
         flex-basis:45%;
         @include flexCenter;
         flex-direction:column;
         margin-bottom:2rem;
+
+        
+        @include respond(phone) {
+            flex-basis:100%;
+            margin-bottom:3rem;
+        }
 
         figure {
             width:100%;
@@ -38,7 +46,7 @@
 
         
         h5 {
-            color:$dark_grey;
+            color:orangered;
             font-size:2rem;
             font-family: "Montserrat";
         }
@@ -76,7 +84,14 @@
     padding-right:10rem;
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between; 
+    justify-content:space-between;
+
+    @include respond(phone) {
+      justify-content:center;
+      min-height:80vh;
+    } 
+
+    
 
     &__image {
         flex-basis:50%;
@@ -87,10 +102,18 @@
         justify-content: center;
         align-items:center;
 
+        @include respond(phone) {
+            flex-basis:100%;
+        }
+
         img {
             height:90%;
             width: 70%;
             object-fit:cover;
+
+            @include respond(phone) {
+                width:100%;
+            }
         }
     }
 
@@ -104,6 +127,10 @@
         justify-content:center;
         align-items:flex-start;
         flex-direction:column;
+
+        @include respond(phone) {
+            margin-top:2rem;
+        }
 
         h4 {
             font-family: "Montserrat";
@@ -130,6 +157,7 @@
             margin-top:.7rem;
             margin-bottom:.7rem;
             width:25%;
+            width:15rem;
 
             h5 {
                 color:$blackop;

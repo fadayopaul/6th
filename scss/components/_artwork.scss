@@ -22,6 +22,11 @@
             @include flexCenter;
             flex-direction:column;
             margin-bottom:2rem;
+
+            @include respond(phone) {
+                flex-basis:100%;
+                margin-bottom:3rem;
+            }
     
             figure {
                 width:100%;
