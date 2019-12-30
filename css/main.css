@@ -296,7 +296,7 @@ nav.nav-open {
 .header {
   height: 100vh;
   background-color: black;
-  background-image: url("../../images/image1.jpg");
+  background-image: url("../images/image1.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
